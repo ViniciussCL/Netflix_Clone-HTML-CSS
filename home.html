@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.6.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="modal fade" id="modal-filme">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-hero">
+            <img src="assets/diabo-de-cada-dia.png">
+            <div class="col-12 modal-hero-infos">
+              <button class="btn btn-m btn-custom-white">
+                <span class="mdi mdi-play"></span>Assistir
+              </button>
+              <a href="#" class="btn btn-custom-round btn-lg btn-light rounded-circle">
+                <span class="mdi mdi-play"></span>
+              </a>
+              <a href="#" class="btn btn-custom-round btn-lg border-white rounded-circle opacity-80">
+                <span class="mdi mdi-plus text-white"></span>
+              </a>
+              <a href="#" class="btn btn-custom-round btn-lg border-white rounded-circle opacity-80">
+                <span class="mdi mdi-thumb-up text-white"></span>
+              </a>
+              <a href="#" class="btn btn-custom-round btn-lg border-white rounded-circle opacity-80">
+                <span class="mdi mdi-thumb-down text-white"></span>
+              </a>
+              <a href="#" id="mutemodal"class="btn btn-custom-round btn-lg border-white rounded-circle opacity-80">
+                <span class="mdi mdi-volume-mute text-white"></span>
+              </a>
+            </div>
+          </div>
+          <div class="modal-infos">
+            <div class="container">
+              <div class="row">
+                <div class="col7">
+                  <br>
+                  <span class="movie_data text-white">2020</span>
+                  <img src="assets/18-anospng.png" class="classificacao">
+                  <span class="tempo_filme text-white">2h18min</span>
+                  <img src="assets/hd_simbol.png" class='hd_simbol' >
+                  <p class="filme_descricao">Em um lugar tomado por corrupção e violência, um <br>jovem enfrenta figuras sinistras para proteger quem<br> mais ama.</p>
+                </div>
+                <div class="col5">
+                  <p class="filme_elenco">Elenco: <text>Tom Holland, Bill<br>Skarsgard, Riley Keough , mais</text> 
+                    <br>
+                    <br>
+                    Gêneros: <text>Filmes baseados em livros,<br> Dramas, Filmes de suspense </text>
+                    <br>
+                    <br>
+                    Cenas e momentos: <text>Sinistros,<br> Sombrios</text>   
+                  </p>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-7">
+                    <h4 class="text-white titulo_lista">Episódios</h4>
+                  </div>
+                  <div class="col-5 text-right">
+                    <select class="form-control lista_temporadas">
+                      <option>
+                        Temporada 1
+                     </option>
+                     <option>
+                       Temporada 2
+                     </option>
+                  </select>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <ul class="lista_episodios">
+                    <li>
+                      <div class="row">
+                        <div class="col-1 my-auto">
+                          <h3 class="text-white">1</h3>
+                        </div>
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/capa-filme.png">
+                        </div>
+                        <div class="col-7">
+                          <h6 class="text-white">Nome do episódio</h6>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras feugiat ac ex ac pharetra. Aliquam 
+                            nisl felis rhoncus non urna ac, feugiat bibendum erat. 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-1 my-auto">
+                          <h3 class="text-white">2</h3>
+                        </div>
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/capa-filme.png">
+                        </div>
+                        <div class="col-7">
+                          <h6 class="text-white">Nome do episódio</h6>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras feugiat ac ex ac pharetra. Aliquam 
+                            nisl felis rhoncus non urna ac, feugiat bibendum erat. 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-1 my-auto">
+                          <h3 class="text-white">3</h3>
+                        </div>
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/capa-filme.png">
+                        </div>
+                        <div class="col-7">
+                          <h6 class="text-white">Nome do episódio</h6>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras feugiat ac ex ac pharetra. Aliquam 
+                            nisl felis rhoncus non urna ac, feugiat bibendum erat. 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-1 my-auto">
+                          <h3 class="text-white">4</h3>
+                        </div>
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/capa-filme.png">
+                        </div>
+                        <div class="col-7">
+                          <h6 class="text-white">Nome do episódio</h6>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras feugiat ac ex ac pharetra. Aliquam 
+                            nisl felis rhoncus non urna ac, feugiat bibendum erat. 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-1 my-auto">
+                          <h3 class="text-white">5</h3>
+                        </div>
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/capa-filme.png">
+                        </div>
+                        <div class="col-7">
+                          <h6 class="text-white">Nome do episódio</h6>
+                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Cras feugiat ac ex ac pharetra. Aliquam 
+                            nisl felis rhoncus non urna ac, feugiat bibendum erat. 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <header class="row">
+        <div class="col-2">
+          <img src="assets/netflix-logo.png" >
+        </div>
+        <div class="col-8">
+          <ul class="menu_list">
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Séries</a>
+            </li> 
+            <li>
+              <a href="#">Filmes</a>
+            </li> 
+            <li>
+              <a href="#">Bombando</a>
+            </li> 
+            <li>
+              <a href="#">Minha lista</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div class="container-fluid" id="hero">
+      <div class="container col-12">
+        <div claass="row" id="hero_infos">
+          <div class="col-6">
+            <img class="logo" src="assets/hero-logo.png">
+            <h1 class="text-white">
+              <img src="assets/badge-top-10.png">
+              Brasil: Top 1 de hoje</h1>
+            <p class="text-white">O dono deste piano-bar é o próprio diabo. Antes de 
+              abominá-lo, saiba que ele também soluciona assassinatos. 
+            </p>
+            <br>
+            <button class="btn btn-lg btn-custom-white">
+              <span class="mdi mdi-play"></span>Assistir
+            </button>
+            <button class="btn btn-lg btn-custom-translucent text-white">
+             <span class="mdi mdi-information-outline"></span> Mais informações
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-white" >Populares na Netflix</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="filme-lista">
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/the100.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw"class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/lucifer.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/umbrella.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/bb.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/tropa.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-white" >Em alta</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="filme-lista">
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/tropa.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/diabodecada.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/jango.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/gotham.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/carbon.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-white" >Originais Netflix</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="filme-lista">
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/bb.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/lucifer.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/alive.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/the100.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/tropa.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-white" >Assistir novamente</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul class="filme-lista">
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/gotham.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/diabodecada.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/umbrella.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/tropa.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+            <li class="filme" data-toggle="modal" data-target="#modal-filme">
+              <img class="img-fluid" src="assets/tropa.png">
+              <div class="filme-info">
+                <div class="col-12">
+                  <a href="#" class="btn btn-custom-round btn-light rounded-circle">
+                    <span class="mdi mdi-play"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-plus text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-up text-white"></span>
+                  </a>
+                  <a href="#" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-thumb-down text-white"></span>
+                  </a>
+                  <a href="#" id="menudw" class="btn btn-custom-round border-white rounded-circle opacity-80">
+                    <span class="mdi mdi-menu-down text-white"></span>
+                  </a>
+                </div>
+                <p>T2-E3 <text>"Meu episódeo"</text></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

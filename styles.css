@@ -1,0 +1,316 @@
+/* GERAIS */
+body {
+  background-color: #000;
+}
+
+header {
+  padding: 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.69) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+header img {
+  width: 150px;
+}
+
+.btn-custom-white {
+    background-color: #fff;
+}
+
+.btn-custom-translucent {
+  background-color: rgba(83, 83, 83, 0.7);
+  color: #fff;
+}
+
+.btn-custom-translucent:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.btn-custom-white:hover {
+  color: #000;
+  opacity: 0.85;
+}
+
+.btn-custom-round {
+  padding: 5px 9px !important;
+}
+
+.opacity-80 {
+  opacity: 0.85;
+}
+
+/* LOGIN */
+body.bg_filmes {
+  background-image: url(assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#caixa_login {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  margin-top: 150px;
+}
+
+#email_log {
+  font-size: medium;
+  background-color: #333333;
+  height: 50px;
+}
+
+#password_log {
+  font-size: medium;
+  background-color: #333333;
+  height: 50px;
+}
+
+#recaptcha {
+  font-size: 15px;
+}
+/* HOME */
+
+.menu_list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 7px
+}
+
+.menu_list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu_list li a {
+  color: #fff;
+}
+
+#hero {
+  height: 950px;
+  background-image: url(assets/hero.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#hero_infos {
+  padding: 0;
+  margin-top: 400px;
+  z-index: 3;
+  position: relative;
+}
+
+#hero::after {
+  content: '';
+  width: 100%;
+  height: 350px;
+  display: block;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  top: calc(950px - 350px);
+}
+
+#hero_infos img.logo {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+#hero_infos h1 {
+  margin-bottom: 20px;
+}
+
+#hero_infos p {
+  font-size: 20px;
+}
+
+#main-content {
+  margin-top: 970px;
+}
+
+.filme-lista {
+  overflow-x: scroll;
+  list-style: none;
+  white-space: nowrap;
+  padding: 10px 0;
+  display: block;
+  border: 1px solid transparent
+}
+
+.filme-lista::-webkit-scrollbar {
+  display: none;
+}
+
+.filme {
+  display: inline-block;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow: auto;
+  border: 1px solid transparent;
+  overflow-y: hidden;
+}
+
+.filme:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 999;
+  transform: 0.5s;
+}
+
+.filme:hover .filme-info {
+  transform: scale(1);
+  transition: 0.5s
+}
+
+.filme:first-child {
+  margin-left: 30px;
+}
+
+.filme-info {
+  background-color: #171717;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  transform: scale(0);
+}
+
+.filme-info .col-12:first-child {
+  margin-bottom: 20px;
+}
+
+.filme-info .col-12 {
+  margin-top: 5px;
+  padding-left: 0;
+}
+
+.filme-info p {
+  color:#b3b3b3;
+  font-size: 13px;
+}
+.filme-info p text {
+  color: #fff
+}
+
+section {
+  margin-bottom: -100px;
+  position: relative;
+}
+
+section:hover {
+  z-index: 9;
+}
+
+#menudw {
+  margin-left: 80px;
+}
+
+/* MODAL */
+
+#mutemodal {
+  margin-left: 260px;
+}
+
+.modal-dialog, .modal-content {
+  background: #171717;
+}
+
+.modal-dialog {
+  max-width: 700px;
+}
+
+.modal-hero {
+  height: 450px;
+  background-image: url(assets/capa-filme.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.modal-hero img {
+  width: 350px;
+  margin-bottom: 30px;
+  margin-top: 160px;
+  position: relative;
+}
+
+.modal-hero-infos button:first-child {
+  margin-right: 15px;
+}
+
+.filme_elenco {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  padding:30px;
+  margin-top: 3px;
+}
+
+.filme_elenco text {
+  color: #fff  
+}
+
+.filme_descricao {
+  font-size: 15px;
+  color: #fff;
+  padding: 30px;
+  margin-top: 0px;
+}
+
+.movie_data {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.classificacao {
+  width: 30px;
+}
+
+.tempo_filme {
+  padding: 10px
+}
+
+.hd_simbol {
+  width: 30px
+}
+
+.lista_temporadas {
+  background-color: #333333;
+  color: #fff;
+  margin-top: -33px
+}
+
+.titulo_lista {
+  margin-left: 15px;
+  margin-top: -30px;
+}
+
+.lista_episodios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista_episodios li {
+  padding:20px
+}
+
+.lista_episodios li p {
+  font-size: 15px;
+}
+
+.lista_episodios li:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+

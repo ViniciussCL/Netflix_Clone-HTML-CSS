@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg_filmes">
+    <div class="container-fluid">
+      <header class="row">
+        <img src="assets/netflix-logo.png" />
+      </header>
+      <div id="caixa_login" class="col-4 offset-4">
+        <h1 class="text-white">Entrar</h1>
+        <br />
+        <form>
+          <input
+            type="email"
+            class="form-control form-control-lg text-white"
+            placeholder="Email ou número de telefone"
+            id="email_log"
+          />
+          <br />
+          <input
+            type="password"
+            class="form-control form-control-lg text-white"
+            placeholder="Senha"
+            id="password_log"
+          />
+          <br />
+          <button class="btn btn-lg btn-block btn-danger">Entrar</button>
+          <div class="row mt-4">
+            <div class="col text-muted">
+              <input type="checkbox" /> Lembrar de mim.
+            </div>
+            <div class="col text-right">
+              <a href="#" class="text-muted">Precisa de ajuda?</a>
+            </div>
+          </div>
+          <div class="mt-5">
+            <img src="assets/facebook.png" width="20" height="20" >
+            <a href="http://Facebook.com" target="_blank" class="text-muted">Conectar com Facebook</a>
+          </div>
+          <div class="mt-4">
+            <span class="text-muted">Novo por aqui?<a href="#" class="text-white"> Assine agora.</a></span>
+          </div>
+          <div class="mt-4" id="recaptcha">
+            <span class="text-white">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é
+              um robô.<a href="#"> Saiba mais.</a>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
